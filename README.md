@@ -1,2 +1,2 @@
 # swiftflowteam.github.io
-Website for Swift flow team
+Website for SwiFT flow team
