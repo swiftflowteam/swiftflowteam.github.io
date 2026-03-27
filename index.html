@@ -19,8 +19,8 @@
             color: white;
             min-height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: flex-start;  /* moved content to top */
+            flex-direction: column;       /* allows full-width image + centered content */
+            align-items: center;
             text-align: center;
         }
 
@@ -31,10 +31,10 @@
 
         .logo {
             display: block;
-            margin: 10px auto 10px auto;
-            width: 100%;
+            width: 100vw;      /* full viewport width */
             height: 150px;
             object-fit: fill;
+            margin: 0;
             filter: grayscale(100%) invert(100%);
         }
 
@@ -71,9 +71,10 @@
 </head>
 
 <body>
-    <div class="container">
-        <img src="vortex2.png" alt="SwiFT logo" class="logo">
 
+    <img src="vortex2.png" alt="SwiFT logo" class="logo">
+
+    <div class="container">
         <h1>SwiFT</h1>
         <p>Fluid Dynamics Research, Development and Consulting</p>
 
@@ -82,5 +83,6 @@
             <a href="get-in-touch.html">Get in touch</a>
         </div>
     </div>
+
 </body>
 </html>
