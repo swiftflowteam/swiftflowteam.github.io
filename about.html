@@ -1,19 +1,84 @@
-.buttons {
-    margin-top: 160px;   /* pushes buttons lower */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - SwiFT</title>
 
-.buttons a {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
-    border: 1px solid #94a3b8;
-    color: #94a3b8;
-    text-decoration: none;
-    border-radius: 0;
-    transition: all 0.3s ease;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
 
-.buttons a:hover {
-    background: #94a3b8;
-    color: #0f172a;
-}
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #cbd5f5;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            margin-top: 160px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            border: 1px solid #94a3b8;
+            color: #94a3b8;
+            text-decoration: none;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+
+        .buttons a:hover {
+            background: #94a3b8;
+            color: #0f172a;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 40px;
+            color: #94a3b8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>About</h1>
+
+        <p>
+            Swinburne Fluids Team (SwiFT) are a group of researchers working at
+            Swinburne University of Technology in Melbourne, Australia. We work on
+            a range of applications spanning fundamental fluid mechanics through to
+            industry consulting.
+        </p>
+
+        <div class="buttons">
+            <a href="#">Fundamental fluid mechanics</a>
+            <a href="#">Respiratory flows</a>
+            <a href="#">Wave energy and coastal erosion mitigation</a>
+            <a href="#">Industry consulting</a>
+        </div>
+
+        <a class="back" href="index.html">← Back to home</a>
+    </div>
+</body>
+</html>
