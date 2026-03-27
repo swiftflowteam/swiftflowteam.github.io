@@ -40,12 +40,7 @@
         }
 
         .buttons {
-            margin-top: 100px;
-            opacity: 0;
-            transition: opacity 0.2s ease;
-        }
-
-        .buttons.show {
+            margin-top: 140px;
             opacity: 1;
         }
 
@@ -53,23 +48,16 @@
             display: inline-block;
             margin: 10px;
             padding: 12px 20px;
-            border: 1px solid #60a5fa;
-            color: #60a5fa;
+            border: 1px solid #94a3b8;
+            color: #94a3b8;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 0;
             transition: all 0.3s ease;
         }
 
         .buttons a:hover {
-            background: #60a5fa;
+            background: #94a3b8;
             color: #0f172a;
-        }
-
-        /* Mobile: always show buttons */
-        @media (max-width: 768px) {
-            .buttons {
-                opacity: 1;
-            }
         }
     </style>
 </head>
@@ -79,27 +67,10 @@
         <h1>SwiFT</h1>
         <p>Fluid Dynamics Research, Development and Consulting</p>
 
-        <div class="buttons" id="buttons">
+        <div class="buttons">
             <a href="#">About</a>
             <a href="#">Get in touch</a>
         </div>
     </div>
-
-<script>
-    let timeout;
-
-    document.addEventListener("mousemove", function () {
-        const buttons = document.getElementById("buttons");
-
-        buttons.classList.add("show");
-
-        clearTimeout(timeout);
-
-        timeout = setTimeout(() => {
-            buttons.classList.remove("show");
-        }, 1000);
-    });
-</script>
-    
 </body>
 </html>
