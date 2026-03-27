@@ -17,15 +17,17 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Hero section */
         .hero {
             background: #0f172a;
             color: white;
             text-align: center;
-            padding: 100px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 20px;
         }
 
-        /* About section */
         .about {
             background: white;
             color: #111;
@@ -40,19 +42,18 @@
 
         p {
             font-size: 1.2em;
+            margin: 0 auto;
+            max-width: 900px;
         }
     </style>
 </head>
 
 <body>
-
-    <!-- Top (dark) section -->
     <div class="hero">
         <h1>SwiFT</h1>
         <p>Fluid Dynamics Research, Development and Consulting</p>
     </div>
 
-    <!-- Bottom (white) section -->
     <div class="about">
         <p>
             Swinburne Fluids Team (SwiFT) are a group of researchers working at
@@ -61,6 +62,5 @@
             industry consulting.
         </p>
     </div>
-
 </body>
 </html>
