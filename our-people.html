@@ -26,10 +26,10 @@
         }
 
         .people-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            gap: 30px;
         }
 
         .person-card {
@@ -37,6 +37,8 @@
             padding: 25px 20px;
             border: 1px solid #334155;
             text-align: center;
+            width: 300px;
+            box-sizing: border-box;
         }
 
         .person-card img {
