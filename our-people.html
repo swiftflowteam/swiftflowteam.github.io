@@ -16,34 +16,71 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: auto;
         }
 
         h1 {
             font-size: 2.5em;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
-        .person {
-            margin-bottom: 30px;
+        .people-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .person-card {
+            background: #111827;
+            padding: 25px 20px;
+            border: 1px solid #334155;
+            text-align: center;
+        }
+
+        .person-card img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            margin-bottom: 20px;
         }
 
         .name {
-            font-size: 1.3em;
+            font-size: 1.2em;
             font-weight: bold;
+            margin-bottom: 8px;
         }
 
         .role {
+            font-size: 1em;
+            color: #94a3b8;
+            margin-bottom: 15px;
+        }
+
+        .blurb {
+            font-size: 0.95em;
             color: #cbd5f5;
-            font-size: 1.1em;
+            line-height: 1.5;
         }
 
         .back {
             display: inline-block;
-            margin-top: 40px;
+            margin-top: 50px;
             color: #94a3b8;
             text-decoration: none;
+        }
+
+        @media (max-width: 900px) {
+            .people-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .people-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -52,19 +89,33 @@
     <div class="container">
         <h1>Our People</h1>
 
-        <div class="person">
-            <div class="name">Professor Justin Leontini</div>
-            <div class="role">Senior Researcher</div>
-        </div>
+        <div class="people-grid">
+            <div class="person-card">
+                <img src="person1.jpg" alt="Justin">
+                <div class="name">Professor Justin Leontini</div>
+                <div class="role">Senior Researcher</div>
+                <div class="blurb">
+                    Details coming soon.
+                </div>
+            </div>
 
-        <div class="person">
-            <div class="name">Professor Richard Manaseh</div>
-            <div class="role">Senior Researcher</div>
-        </div>
+            <div class="person-card">
+                <img src="person2.jpg" alt="Richard">
+                <div class="name">Professor Richard Manasseh</div>
+                <div class="role">Senior Researcher</div>
+                <div class="blurb">
+                    Details coming soon.
+                </div>
+            </div>
 
-        <div class="person">
-            <div class="name">Thomas Scott</div>
-            <div class="role">Postdoctoral Researcher</div>
+            <div class="person-card">
+                <img src="person3.jpg" alt="Tom">
+                <div class="name">Thomas Scott</div>
+                <div class="role">Postdoctoral Researcher</div>
+                <div class="blurb">
+                    Details coming soon.
+                </div>
+            </div>
         </div>
 
         <a class="back" href="index.html">← Back to home</a>
