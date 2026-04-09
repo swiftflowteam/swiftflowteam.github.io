@@ -25,12 +25,35 @@
             margin-bottom: 40px;
         }
 
-        p {
-            font-size: 1.2em;
-            color: #cbd5f5;
+        .paper {
+            margin-bottom: 60px;
+            text-align: left;
         }
 
-        a {
+        .paper-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .paper-summary {
+            font-size: 1.1em;
+            color: #cbd5f5;
+            margin-bottom: 20px;
+        }
+
+        .paper img {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px 0;
+        }
+
+        .paper a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+
+        .back {
             display: inline-block;
             margin-top: 40px;
             color: #94a3b8;
@@ -43,9 +66,25 @@
     <div class="container">
         <h1>Fundamental Fluid Mechanics</h1>
 
-        <p>Details coming soon.</p>
+        <div class="paper">
+            <div class="paper-title">
+                Example Paper Title
+            </div>
 
-        <a href="index.html">← Back to home</a>
+            <div class="paper-summary">
+                We investigated how flow instabilities develop in complex fluid systems.
+                This work improves understanding of how small disturbances grow and affect
+                real-world engineering performance.
+            </div>
+
+            <img src="example-image.png" alt="Flow visualisation">
+
+            <div>
+                <a href="#">Read the paper</a>
+            </div>
+        </div>
+
+        <a class="back" href="index.html">← Back to home</a>
     </div>
 </body>
 </html>
