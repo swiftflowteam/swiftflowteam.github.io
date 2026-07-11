@@ -25,24 +25,49 @@
             margin-bottom: 40px;
         }
 
-        p {
-            font-size: 1.2em;
+        .paper {
+            margin-bottom: 60px;
+            text-align: left;
+        }
+
+        .paper-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .paper-summary {
+            font-size: 1.1em;
             color: #cbd5f5;
+            margin-bottom: 20px;
+            text-align: justify;
         }
 
-        video {
-                width: 100%;
-                max-width: 600px;
-                height: auto;
-                display: block;
-                margin: 30px auto;
+        .paper figure {
+            text-align: center;
+            margin: 20px 0;
         }
 
-        a {
-            display: inline-block;
+        .paper video {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .paper figcaption {
+            font-size: 0.9em;
+            color: #94a3b8;
+            margin-top: 8px;
+        }
+
+        .back {
+            display: block;
             margin-top: 40px;
             color: #94a3b8;
             text-decoration: none;
+            text-align: center;
         }
     </style>
 </head>
@@ -51,16 +76,34 @@
     <div class="container">
         <h1>Bubble Acoustics</h1>
 
-        <p>
-        An air bubble detaches from an underwater nozzle 6 mm in internal diameter, captured at 4100 frames per second in Swinburne's Energy Transformation Laboratory. At the instant of detachment, the sudden change in interface topology causes a slight expansion or compression of the air now trapped in the newly-formed bubble, causing the bubble volume to "ring", emitting sound like a bell. Bubble-formation sounds account for much of the noise humans associate with water in motion. These sounds are being investigated for industrial and oceanic measurements.
-        </p>
+        <div class="paper">
+            <div class="paper-title">
+                Sound generation during bubble detachment
+            </div>
 
-        <video controls width="600">
-        <source src="bubble_detachment_web.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
+            <div class="paper-summary">
+                An air bubble detaches from an underwater nozzle 6 mm in internal diameter,
+                captured at 4100 frames per second in Swinburne's Energy Transformation
+                Laboratory. At the instant of detachment, the sudden change in interface
+                topology causes a slight expansion or compression of the air trapped in the
+                newly formed bubble. This causes the bubble volume to ring and emit sound.
+                Bubble-formation sounds account for much of the noise associated with moving
+                water and are being investigated for industrial and oceanic measurements.
+            </div>
 
-        <a href="index.html">← Back to home</a>
+            <figure>
+                <video controls>
+                    <source src="bubble_detachment_web.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <figcaption>
+                    High-speed footage of an air bubble detaching from a submerged nozzle.
+                </figcaption>
+            </figure>
+        </div>
+
+        <a class="back" href="index.html">← Back to home</a>
     </div>
 </body>
 </html>
